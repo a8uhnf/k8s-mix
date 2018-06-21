@@ -3,10 +3,8 @@ Discrete information about kubernetes
 
 ## Get the logs of kubelet
 
-If you run kubelet using systemd, then you could use the following method to see kubelet's logs:
+If using GKE cluster then needs to ssh into node and run below command.
 
 ```console
-journalctl -u kubelet
+sudo journalctl -u kubelet
 ```
-
-First, need to ssh into your node.
